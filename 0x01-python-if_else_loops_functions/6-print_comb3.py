@@ -4,5 +4,5 @@ for x in range(0, 10):
         if (x < y):
             print("{:d}{:d}".format(x, y), end="")
             if x < 8:
-                print(",", end="")
+                print(", ", end="")
 print("")
