@@ -1,22 +1,22 @@
 #!/usr/bin/python3
-import sys
+from sys import argv, exit
 from calculator_1 import add, sub, mul, div
 
 if __name__ == '__main__':
-    sys.argv.pop(0)
-    argvlength = len(sys.argv)
+    argv.pop(0)
+    argvlength = len(argv)
 
     if (argvlength == 3):
-        a = int(sys.argv[0])
-        b = int(sys.argv[2])
+        a = int(argv[0])
+        b = int(argv[2])
 
-        if (sys.argv[1] == "+"):
+        if (argv[1] == "+"):
             print("{:d} + {:d} = {:d}".format(a, b, add(a, b)))
-        elif (sys.argv[1] == "-"):
+        elif (argv[1] == "-"):
             print("{:d} - {:d} = {:d}".format(a, b, sub(a, b)))
-        elif (sys.argv[1] == "*"):
+        elif (argv[1] == "*"):
             print("{:d} * {:d} = {:d}".format(a, b, mul(a, b)))
-        elif (sys.argv[1] == "/"):
+        elif (argv[1] == "/"):
             print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
         else:
             print("Unknown operator. Available operators: +, -, * and /")
