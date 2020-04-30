@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-import sys
 from calculator_1 import add, sub, mul, div
-
+from sys import argv, exit
 if __name__ == '__main__':
     sys.argv.pop(0)
     argvlength = len(sys.argv)
