@@ -1,6 +1,6 @@
 #!/usr/bin/python
 def new_in_list(my_list, idx, element):
-    listlength = len(my_list)
+    listlength = len(my_list) - 1
     if (idx < 0 or idx > listlength):
         return (my_list)
     else:
