@@ -4,7 +4,7 @@
  * print_python_list_info - shows info about Python lists
  * @p: object
  *
- * Return: 1 palindrome, 0 not palindrome
+ * Return: 0
  */
 void print_python_list_info(PyObject *p)
 {
