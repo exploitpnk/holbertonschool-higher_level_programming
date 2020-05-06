@@ -4,7 +4,5 @@ def delete_at(my_list=[], idx=0):
     if idx < 0 or idx > length_list:
         return(my_list)
     else:
-        a = my_list[:idx]
-        b = my_list[idx:]
-        new_list = a + b
-        return(new_list)
+        del my_list[idx]
+        return(my_list)
