@@ -8,8 +8,7 @@
  */
 void print_python_list_info(PyObject *p)
 {
-	int a, i;
-	long int list_size;
+	long int list_size, a, i;
 
 	i = 0;
 	PyObject *obj;
