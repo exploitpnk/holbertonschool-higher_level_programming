@@ -1,0 +1,25 @@
+>>> function = __import__("0-add_integer").add_integer
+>>> function(1, 2)
+3
+>>> function(100, -2)
+98
+>>> function(2)
+100
+>>> function(100.3, -2)
+98
+>>> function()
+Traceback (most recent call last):
+	...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+>>> function(4, "School")
+Traceback (most recent call last):
+	...
+TypeError: b must be an integer
+>>> function(None)
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
+>>> function(None, None)
+Traceback (most recent call last):
+	...
+TypeError: a must be an integer
