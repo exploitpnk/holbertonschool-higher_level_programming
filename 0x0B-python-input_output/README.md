@@ -21,6 +21,9 @@ Read / Writing files and JSON
 * Pascal's Triangle - [view]()
 * Search and update - [view]()
 * Log parsing - [view]()
+
+## Advanced tasks
+
 * Hack the VM - [view]()
 
 ## Author
