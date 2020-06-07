@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """ class Student that defines a student """
-load_from_json_file = __import__('8-load_from_json_file').load_from_json_file
 
 
 class Student:
