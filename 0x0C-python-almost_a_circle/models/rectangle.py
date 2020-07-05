@@ -91,3 +91,15 @@ class Rectangle(Base):
         frmt = "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}"
         frmt = frmt.format(self.id, self.x, self.y, self.width, self.height)
         return frmt
+
+    def update(self, *args, **kwargs):
+        """ assigns an argument to each attribute """
+
+        attrbts = ["id", "width", "height", "x", "y"]
+
+        if args is not None:
+            for i, value in enumerate(args):
+                setattr(self, attrbts[i], value)
+        if kwargs is not None:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
