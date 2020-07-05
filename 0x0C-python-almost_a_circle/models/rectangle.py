@@ -80,10 +80,11 @@ class Rectangle(Base):
 
     def display(self):
         """ display in stdout the Rectangle """
-        for height in range(self.height):
-            for width in range(self.width):
-                print('#', end='')
-            print()
+        for i in range(self.y):
+            print("")
+        for j in range(self.height):
+            print("" * self.x, end='')
+            print("#" * self.width)
 
     def __str__(self):
         """ __str__ method update """
